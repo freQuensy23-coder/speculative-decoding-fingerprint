@@ -1,0 +1,48 @@
+model=gpt-5.4-2026-03-05  trials/order=15  max_tokens=900
+  REV 03  JSON: 400tok  83.2 tok/s  |  STORY:  95tok  29.1 tok/s  |  ratio J/S=2.86
+  REV 09  JSON: 400tok  87.2 tok/s  |  STORY: 105tok  31.2 tok/s  |  ratio J/S=2.79
+  REV 13  JSON: 400tok  90.7 tok/s  |  STORY: 112tok  29.6 tok/s  |  ratio J/S=3.06
+  REV 14  JSON: 400tok  89.9 tok/s  |  STORY: 112tok  31.9 tok/s  |  ratio J/S=2.82
+  FWD 14  JSON: 400tok  70.9 tok/s  |  STORY: 133tok  29.3 tok/s  |  ratio J/S=2.42
+  REV 12  JSON: 400tok  90.7 tok/s  |  STORY:  97tok  32.1 tok/s  |  ratio J/S=2.83
+  FWD 04  JSON: 400tok  72.5 tok/s  |  STORY: 145tok  39.2 tok/s  |  ratio J/S=1.85
+  REV 11  JSON: 400tok  99.4 tok/s  |  STORY: 119tok  34.3 tok/s  |  ratio J/S=2.89
+  REV 06  JSON: 400tok  74.8 tok/s  |  STORY: 114tok  27.6 tok/s  |  ratio J/S=2.71
+  FWD 11  JSON: 400tok  75.1 tok/s  |  STORY: 135tok  34.3 tok/s  |  ratio J/S=2.19
+  FWD 00  JSON: 400tok  78.3 tok/s  |  STORY: 109tok  47.9 tok/s  |  ratio J/S=1.63
+  FWD 13  JSON: 400tok  82.5 tok/s  |  STORY: 113tok  48.5 tok/s  |  ratio J/S=1.70
+  FWD 09  JSON: 400tok  88.5 tok/s  |  STORY: 122tok  37.4 tok/s  |  ratio J/S=2.36
+  REV 02  JSON: 400tok  88.7 tok/s  |  STORY: 113tok  28.0 tok/s  |  ratio J/S=3.17
+  FWD 03  JSON: 400tok  71.4 tok/s  |  STORY: 122tok  38.6 tok/s  |  ratio J/S=1.85
+  FWD 12  JSON: 400tok  73.1 tok/s  |  STORY: 133tok  41.1 tok/s  |  ratio J/S=1.78
+  FWD 05  JSON: 400tok  77.8 tok/s  |  STORY: 117tok  46.4 tok/s  |  ratio J/S=1.68
+  REV 07  JSON: 400tok  87.4 tok/s  |  STORY: 117tok  29.7 tok/s  |  ratio J/S=2.95
+  FWD 07  JSON: 400tok  72.3 tok/s  |  STORY: 120tok  43.3 tok/s  |  ratio J/S=1.67
+  FWD 06  JSON: 400tok  93.7 tok/s  |  STORY: 124tok  40.6 tok/s  |  ratio J/S=2.31
+  REV 01  JSON: 400tok  94.3 tok/s  |  STORY: 103tok  31.1 tok/s  |  ratio J/S=3.04
+  REV 05  JSON: 400tok  90.1 tok/s  |  STORY:  95tok  33.6 tok/s  |  ratio J/S=2.68
+  REV 10  JSON: 400tok  88.3 tok/s  |  STORY: 106tok  29.7 tok/s  |  ratio J/S=2.97
+  REV 08  JSON: 400tok  84.7 tok/s  |  STORY: 121tok  32.4 tok/s  |  ratio J/S=2.62
+  REV 04  JSON: 400tok  85.3 tok/s  |  STORY: 122tok  29.5 tok/s  |  ratio J/S=2.90
+  FWD 02  JSON: 400tok  76.4 tok/s  |  STORY: 120tok  41.6 tok/s  |  ratio J/S=1.84
+  FWD 01  JSON: 400tok  66.6 tok/s  |  STORY: 111tok  37.3 tok/s  |  ratio J/S=1.78
+  FWD 10  JSON: 400tok  74.6 tok/s  |  STORY:  97tok  46.6 tok/s  |  ratio J/S=1.60
+  FWD 08  JSON: 400tok  67.9 tok/s  |  STORY: 146tok  37.7 tok/s  |  ratio J/S=1.80
+  REV 00  JSON: 400tok  69.2 tok/s  |  STORY: 148tok  26.7 tok/s  |  ratio J/S=2.59
+
+=== ORDER=FWD  (first section = JSON)  n=15 ===
+  JSON   tok/s  mean= 76.10  95% CI [ 72.00,  80.20]
+  STORY  tok/s  mean= 40.65  95% CI [ 37.69,  43.62]
+  ratio  JSON/STORY  mean=1.898  95% CI [1.742, 2.053]
+  trials with JSON faster than STORY: 15/15
+
+=== ORDER=REV  (first section = STORY)  n=15 ===
+  JSON   tok/s  mean= 86.92  95% CI [ 82.85,  91.00]
+  STORY  tok/s  mean= 30.42  95% CI [ 29.19,  31.65]
+  ratio  JSON/STORY  mean=2.859  95% CI [2.766, 2.952]
+  trials with JSON faster than STORY: 15/15
+
+=== content vs position verdict ===
+  FWD (JSON first)  ratio J/S = 1.898 [1.742, 2.053]
+  REV (STORY first) ratio J/S = 2.859 [2.766, 2.952]
+  -> J/S > 1 in BOTH orders. Result is CONTENT-driven, not position.

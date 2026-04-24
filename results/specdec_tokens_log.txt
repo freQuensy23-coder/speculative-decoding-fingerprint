@@ -1,0 +1,44 @@
+model=gpt-5.4-2026-03-05  trials=20  max_tokens=900
+  00  A: 400tok /  6.60s =  60.5 tok/s (gap p50=  0.0 p90=  53.6 ms)  ||  B: 127tok /  3.83s =  32.9 tok/s (gap p50=  0.0 p90=  72.7 ms)
+  01  A: 400tok /  5.67s =  70.4 tok/s (gap p50=  0.0 p90=  51.1 ms)  ||  B: 145tok /  4.02s =  35.8 tok/s (gap p50=  0.0 p90=  82.6 ms)
+  02  A: 400tok /  5.92s =  67.4 tok/s (gap p50=  0.0 p90=  53.4 ms)  ||  B: 110tok /  2.58s =  42.2 tok/s (gap p50=  0.0 p90= 111.7 ms)
+  03  A: 400tok /  6.01s =  66.4 tok/s (gap p50=  0.0 p90=  51.1 ms)  ||  B: 105tok /  2.69s =  38.7 tok/s (gap p50=  0.0 p90= 101.6 ms)
+  04  A: 400tok /  6.09s =  65.6 tok/s (gap p50=  0.0 p90=  57.5 ms)  ||  B: 118tok /  2.66s =  44.0 tok/s (gap p50=  0.0 p90=   2.0 ms)
+  05  A: 400tok /  5.41s =  73.8 tok/s (gap p50=  0.0 p90=  52.0 ms)  ||  B: 111tok /  2.89s =  38.0 tok/s (gap p50=  0.0 p90= 104.2 ms)
+  06  A: 400tok /  5.79s =  68.9 tok/s (gap p50=  0.0 p90=  51.8 ms)  ||  B: 108tok /  3.02s =  35.5 tok/s (gap p50=  0.0 p90= 106.2 ms)
+  07  A: 400tok /  5.33s =  74.9 tok/s (gap p50=  0.0 p90=  51.8 ms)  ||  B: 115tok /  3.00s =  38.0 tok/s (gap p50=  0.0 p90=  92.3 ms)
+  08  A: 400tok /  5.80s =  68.7 tok/s (gap p50=  0.0 p90=  52.9 ms)  ||  B: 131tok /  3.51s =  37.0 tok/s (gap p50=  0.0 p90=  60.9 ms)
+  09  A: 400tok /  5.75s =  69.3 tok/s (gap p50=  0.0 p90=  53.3 ms)  ||  B: 137tok /  3.42s =  39.8 tok/s (gap p50=  0.0 p90=  77.8 ms)
+  10  A: 400tok /  5.20s =  76.7 tok/s (gap p50=  0.0 p90=  46.0 ms)  ||  B: 101tok /  2.72s =  36.8 tok/s (gap p50=  0.0 p90=  75.1 ms)
+  11  A: 400tok /  5.68s =  70.2 tok/s (gap p50=  0.0 p90=  50.9 ms)  ||  B: 116tok /  3.65s =  31.5 tok/s (gap p50=  0.0 p90=  80.9 ms)
+  12  A: 400tok /  5.69s =  70.1 tok/s (gap p50=  0.0 p90=  52.8 ms)  ||  B: 104tok /  2.84s =  36.3 tok/s (gap p50=  0.0 p90=  63.7 ms)
+  13  A: 400tok /  5.71s =  69.8 tok/s (gap p50=  0.0 p90=  52.5 ms)  ||  B: 114tok /  3.64s =  31.1 tok/s (gap p50=  0.0 p90=  48.1 ms)
+  14  A: 400tok /  5.94s =  67.2 tok/s (gap p50=  0.0 p90=  54.9 ms)  ||  B: 124tok /  3.23s =  38.1 tok/s (gap p50=  0.0 p90=  67.8 ms)
+  15  A: 400tok /  5.44s =  73.3 tok/s (gap p50=  0.0 p90=  47.1 ms)  ||  B: 126tok /  3.81s =  32.8 tok/s (gap p50=  0.0 p90=  81.8 ms)
+  16  A: 400tok /  5.40s =  73.9 tok/s (gap p50=  0.0 p90=  49.6 ms)  ||  B: 103tok /  2.81s =  36.3 tok/s (gap p50=  0.0 p90=  73.5 ms)
+  17  A: 400tok /  5.72s =  69.7 tok/s (gap p50=  0.0 p90=  52.4 ms)  ||  B: 107tok /  2.70s =  39.2 tok/s (gap p50=  0.0 p90=  92.3 ms)
+  18  A: 400tok /  6.09s =  65.5 tok/s (gap p50=  0.0 p90=  52.2 ms)  ||  B: 113tok /  3.78s =  29.6 tok/s (gap p50=  0.0 p90= 139.1 ms)
+  19  A: 400tok /  5.48s =  72.8 tok/s (gap p50=  0.0 p90=  47.0 ms)  ||  B: 118tok /  3.35s =  34.9 tok/s (gap p50=  0.0 p90=  99.3 ms)
+
+logprobs used in 0/20 trials (rest used tiktoken fallback)
+
+=== per-section tokens/sec (n=20, 95% CI Student-t) ===
+  A predictable : mean= 69.76  95% CI [ 67.96,  71.56]
+  B creative    : mean= 36.42  95% CI [ 34.72,  38.13]
+  ratio A/B     : mean= 1.933  95% CI [ 1.832,  2.034]
+  trials with A faster than B: 20/20
+
+=== pooled inter-token gap median (ms), 95% bootstrap CI ===
+  A predictable : median= 0.024  CI [ 0.023,  0.026]  (n=7980)
+  B creative    : median= 0.022  CI [ 0.021,  0.024]  (n=2313)
+
+=== gap percentiles (ms) ===
+  p50  A=   0.02   B=   0.02
+  p75  A=   2.97   B=   4.81
+  p90  A=  52.11   B=  79.42
+  p95  A=  95.54   B= 142.27
+  p99  A= 143.06   B= 330.88
+
+=== paired A−B tok/s difference ===
+  mean diff =  33.33  95% CI [ 30.85,  35.82]  tok/s
+  -> CI does NOT include zero: predictable is significantly faster.

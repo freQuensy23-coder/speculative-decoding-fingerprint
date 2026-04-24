@@ -1,0 +1,45 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "main_within_stream_test": {
+    "trials": 20,
+    "predictable_json": {
+      "mean_tokens_per_second": 69.76,
+      "ci95": [67.96, 71.56]
+    },
+    "creative_story": {
+      "mean_tokens_per_second": 36.42,
+      "ci95": [34.72, 38.13]
+    },
+    "ratio_predictable_to_creative": {
+      "mean": 1.933,
+      "ci95": [1.832, 2.034]
+    },
+    "paired_difference_tokens_per_second": {
+      "mean": 33.33,
+      "ci95": [30.85, 35.82]
+    },
+    "predictable_faster_trials": "20/20"
+  },
+  "order_control_test": {
+    "trials_per_order": 15,
+    "fwd_json_then_story": {
+      "json_mean_tokens_per_second": 76.10,
+      "json_ci95": [72.00, 80.20],
+      "story_mean_tokens_per_second": 40.65,
+      "story_ci95": [37.69, 43.62],
+      "ratio_json_to_story": 1.898,
+      "ratio_ci95": [1.742, 2.053]
+    },
+    "rev_story_then_json": {
+      "json_mean_tokens_per_second": 86.92,
+      "json_ci95": [82.85, 91.00],
+      "story_mean_tokens_per_second": 30.42,
+      "story_ci95": [29.19, 31.65],
+      "ratio_json_to_story": 2.859,
+      "ratio_ci95": [2.766, 2.952]
+    },
+    "json_faster_trials": "30/30",
+    "verdict": "content-driven, not position-driven"
+  }
+}
+
