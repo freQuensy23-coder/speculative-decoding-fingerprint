@@ -39,6 +39,6 @@ logprobs used in 0/20 trials (rest used tiktoken fallback)
   p95  A=  95.54   B= 142.27
   p99  A= 143.06   B= 330.88
 
-=== paired A−B tok/s difference ===
+=== paired A-B tok/s difference ===
   mean diff =  33.33  95% CI [ 30.85,  35.82]  tok/s
   -> CI does NOT include zero: predictable is significantly faster.

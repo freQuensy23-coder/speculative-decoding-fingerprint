@@ -4,7 +4,6 @@ __pycache__/
 .DS_Store
 .env
 keys.txt
-test_keys.sh
 resp_*.json
 *.secret
 *.key
